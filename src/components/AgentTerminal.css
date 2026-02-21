@@ -1,108 +1,108 @@
 .terminal-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .terminal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 0.75rem;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid var(--color-green);
-    opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-green);
+  opacity: 0.8;
 }
 
 .terminal-title {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    color: var(--color-green);
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--color-green);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
 }
 
 .news-ticker {
-    background: var(--bg-surface-elevated);
-    color: var(--text-primary);
-    padding: 0.5rem;
-    border-radius: 4px;
-    font-family: var(--font-family);
-    font-size: 0.875rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    border-left: 3px solid var(--color-indigo);
-    overflow: hidden;
-    white-space: nowrap;
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-indigo);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .news-ticker.alert {
-    border-left-color: var(--color-red);
-    background: rgba(239, 68, 68, 0.1);
+  border-left-color: var(--color-red);
+  background: rgba(239, 68, 68, 0.1);
 }
 
 .news-label {
-    font-weight: 700;
-    color: var(--color-indigo);
+  font-weight: 700;
+  color: var(--color-indigo);
 }
 
 .news-label.alert {
-    color: var(--color-red);
+  color: var(--color-red);
 }
 
 .logs-container {
-    flex: 1;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .log-entry {
-    font-size: 0.875rem;
-    line-height: 1.4;
-    opacity: 0.9;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  opacity: 0.9;
 }
 
 .log-time {
-    color: var(--text-muted);
-    margin-right: 0.75rem;
+  color: var(--text-muted);
+  margin-right: 0.75rem;
 }
 
 .log-text.normal {
-    color: var(--color-green);
+  color: var(--color-green);
 }
 
 .log-text.warning {
-    color: var(--color-yellow);
-    /* warning */
+  color: var(--color-yellow);
+  /* warning */
 }
 
 .log-text.critical {
-    color: var(--color-red);
-    font-weight: 700;
+  color: var(--color-red);
+  font-weight: 700;
 }
 
 .log-text.info {
-    color: var(--color-indigo);
-    /* info */
+  color: var(--color-indigo);
+  /* info */
 }
 
 /* Scrollbar styles for terminal */
 .logs-container::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 .logs-container::-webkit-scrollbar-track {
-    background: #050505;
+  background: #050505;
 }
 
 .logs-container::-webkit-scrollbar-thumb {
-    background: rgba(34, 197, 94, 0.3);
-    border-radius: 3px;
+  background: rgba(34, 197, 94, 0.3);
+  border-radius: 3px;
 }

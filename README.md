@@ -3,7 +3,8 @@
 DemonChain.ai is an autonomous GenAI command center designed to revolutionize global supply chain resilience. By actively scraping and parsing global news streams using advanced LLMs, it detects incoming supply chain disruptions instantly, maps the blast radius, generates actionable mitigation runbooks, and logs critical business alerts directly into Datadog.
 
 ## 🚀 The Problem We Solve
-Global supply chains are extremely fragile and heavily reliant on manual human monitoring. Enterprise companies often react to geopolitical events, factory fires, or shipping blockades *after* the damage is done. 
+
+Global supply chains are extremely fragile and heavily reliant on manual human monitoring. Enterprise companies often react to geopolitical events, factory fires, or shipping blockades _after_ the damage is done.
 
 DemonChain.ai solves the "reaction latency" problem. By autonomously feeding live unstructured data through advanced language models, our platform detects supply chain threats the second news breaks. It doesn't just alert stakeholders; it actively produces dynamic mitigation strategies (like rerouting cargo or engaging backup suppliers) and ensures enterprise-grade visibility and tracking. It turns a chaotic reactive supply chain into a proactive, resilient one.
 
@@ -11,11 +12,11 @@ DemonChain.ai solves the "reaction latency" problem. By autonomously feeding liv
 
 We leveraged a cutting-edge suite of AI, Observability, and Graph technologies to bring this platform to life:
 
-*   **Amazon Bedrock (MiniMax & Claude 3 Sonnet):** We utilize AWS Bedrock's powerful and low-latency models to process incoming unstructured news articles. MiniMax is used for fast, structured JSON extraction of incident severity and details, while Anthropic's Claude 3 Sonnet powers the real-time reasoning engine for our mitigation strategies.
-*   **Datadog (MCP & Events API):** Enterprise-grade observability is built directly into the core loop. Every AI-detected incident triggers a live, tagged event injected directly into the Datadog platform via the Model Context Protocol (MCP) securely using our Datadog API keys, ensuring NOC teams have immediate visibility into supply chain health alongside their infrastructure.
-*   **Neo4j Graph Database:** To understand the true "blast radius" of a disruption, we utilize Neo4j to map the complex web of interconnected suppliers, warehouses, and transit routes. When an incident occurs at a specific node, the graph instantly identifies downstream dependencies that require mitigation.
-*   **CopilotKit (SiriSphere):** We integrated CopilotKit to provide an interactive, Siri-like voice AI interface ("SiriSphere"). This allows supply chain incident commanders to use natural voice interactions to ask the AI about the crisis status, affected regions, and recommended next steps, powered seamlessly by our AWS Bedrock backend.
-*   **React (Vite) & Express.js:** A sleek, high-performance "glassmorphism" dashboard built on React providing the real-time NOC view, supported by a robust Node/Express backend that orchestrates the AI and database connections.
+- **Amazon Bedrock (MiniMax & Claude 3 Sonnet):** We utilize AWS Bedrock's powerful and low-latency models to process incoming unstructured news articles. MiniMax is used for fast, structured JSON extraction of incident severity and details, while Anthropic's Claude 3 Sonnet powers the real-time reasoning engine for our mitigation strategies.
+- **Datadog (MCP & Events API):** Enterprise-grade observability is built directly into the core loop. Every AI-detected incident triggers a live, tagged event injected directly into the Datadog platform via the Model Context Protocol (MCP) securely using our Datadog API keys, ensuring NOC teams have immediate visibility into supply chain health alongside their infrastructure.
+- **Neo4j Graph Database:** To understand the true "blast radius" of a disruption, we utilize Neo4j to map the complex web of interconnected suppliers, warehouses, and transit routes. When an incident occurs at a specific node, the graph instantly identifies downstream dependencies that require mitigation.
+- **CopilotKit (SiriSphere):** We integrated CopilotKit to provide an interactive, Siri-like voice AI interface ("SiriSphere"). This allows supply chain incident commanders to use natural voice interactions to ask the AI about the crisis status, affected regions, and recommended next steps, powered seamlessly by our AWS Bedrock backend.
+- **React (Vite) & Express.js:** A sleek, high-performance "glassmorphism" dashboard built on React providing the real-time NOC view, supported by a robust Node/Express backend that orchestrates the AI and database connections.
 
 ## ⚙️ How It Works
 
@@ -29,32 +30,35 @@ We leveraged a cutting-edge suite of AI, Observability, and Graph technologies t
 ## 💻 Running Locally
 
 ### Prerequisites
-*   Node.js (v18+)
-*   AWS Bedrock Access (MiniMax & Claude 3 Sonnet enabled)
-*   Datadog API Keys
-*   Neo4j instance (local or AuraDB)
+
+- Node.js (v18+)
+- AWS Bedrock Access (MiniMax & Claude 3 Sonnet enabled)
+- Datadog API Keys
+- Neo4j instance (local or AuraDB)
 
 ### Setup
 
 1.  **Clone the Repository:**
+
     ```bash
     git clone https://github.com/GarvitSharmaDeveloper/DemonChain.ai.git
     cd DemonChain.ai
     ```
 
 2.  **Install Dependencies:**
-    *   For the React Frontend:
-        ```bash
-        npm install
-        ```
-    *   For the Express Backend:
-        ```bash
-        cd server
-        npm install
-        ```
+    - For the React Frontend:
+      ```bash
+      npm install
+      ```
+    - For the Express Backend:
+      ```bash
+      cd server
+      npm install
+      ```
 
 3.  **Environment Variables:**
     Create a `.env` file in the `server` directory with your secure credentials:
+
     ```env
     AWS_ACCESS_KEY_ID=your_aws_key
     AWS_SECRET_ACCESS_KEY=your_aws_secret
@@ -67,15 +71,15 @@ We leveraged a cutting-edge suite of AI, Observability, and Graph technologies t
     ```
 
 4.  **Start the Services:**
-    *   Terminal 1 (Backend):
-        ```bash
-        cd server
-        node server.js
-        ```
-    *   Terminal 2 (Frontend):
-        ```bash
-        npm run dev
-        ```
+    - Terminal 1 (Backend):
+      ```bash
+      cd server
+      node server.js
+      ```
+    - Terminal 2 (Frontend):
+      ```bash
+      npm run dev
+      ```
 
 5.  **Access the Dashboard:**
     Open `http://localhost:5173` in your browser to start a crisis simulation!

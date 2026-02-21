@@ -1,141 +1,141 @@
 .ticket-layout {
-    padding: 2rem;
-    height: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
+  padding: 2rem;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .ticket-header-card {
-    padding: 1.5rem 2rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .ticket-id {
-    color: var(--color-indigo);
-    font-weight: 600;
-    font-size: 0.875rem;
-    margin-bottom: 0.25rem;
+  color: var(--color-indigo);
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
 }
 
 .ticket-title {
-    font-size: 1.5rem;
-    color: var(--text-primary);
+  font-size: 1.5rem;
+  color: var(--text-primary);
 }
 
 .badge-red {
-    background: rgba(220, 38, 38, 0.2);
-    color: var(--color-red);
-    border: 1px solid var(--color-red);
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 0.875rem;
-    box-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
+  background: rgba(220, 38, 38, 0.2);
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
 }
 
 .ticket-grid {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 1.5rem;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .ticket-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .sidebar-box {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .sidebar-box h3 {
-    font-size: 1rem;
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: 0.75rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
+  font-size: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 .detail-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.75rem;
-    font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .detail-row .label {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 .detail-row .value {
-    font-weight: 600;
-    color: var(--text-primary);
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .stakeholder {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-    margin-bottom: 0.75rem;
-    background: var(--bg-surface);
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  background: var(--bg-surface);
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
 }
 
 .ticket-main {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .ticket-main h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-indigo);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-indigo);
 }
 
 .report-section {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .report-section h4 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
 }
 
 .report-section p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .report-section code {
-    background: var(--bg-surface-elevated);
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    color: var(--color-green);
-    font-family: monospace;
+  background: var(--bg-surface-elevated);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: var(--color-green);
+  font-family: monospace;
 }
 
 .runbook-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .runbook-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
 }

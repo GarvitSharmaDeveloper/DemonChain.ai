@@ -1,215 +1,215 @@
 .tracker-container {
-    padding: 2rem;
-    /* Prevent overlap with the absolute positioned crisis button */
-    height: 100%;
-    overflow-y: auto;
-    background: var(--bg-surface);
+  padding: 2rem;
+  /* Prevent overlap with the absolute positioned crisis button */
+  height: 100%;
+  overflow-y: auto;
+  background: var(--bg-surface);
 }
 
 .tracker-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .tracker-header h3 {
-    font-size: 1.25rem;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
 }
 
 .all-good-badge {
-    background: rgba(34, 197, 94, 0.15);
-    color: var(--color-green);
-    border: none;
-    padding: 0.35rem 0.85rem;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.3px;
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--color-green);
+  border: none;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .shipment-card {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    /* iOS style generous rounding */
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  /* iOS style generous rounding */
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .shipment-card:hover,
 .shipment-card.expanded {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.3);
 }
 
 .slide-down-fast {
-    animation: slideDownFast 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    transform-origin: top;
+  animation: slideDownFast 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top;
 }
 
 @keyframes slideDownFast {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .shipment-top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .shipment-id {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--color-indigo);
-    margin-bottom: 0.25rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-indigo);
+  margin-bottom: 0.25rem;
 }
 
 .shipment-cargo {
-    font-size: 0.875rem;
-    color: var(--text-secondary);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
 }
 
 .shipment-status {
-    font-weight: 600;
-    font-size: 0.875rem;
-    color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
 }
 
 .routing-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-    color: var(--text-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
 }
 
 .routing-node {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .routing-arrow {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
 
 .pizza-tracker {
-    position: relative;
-    padding: 2rem 0 1rem 0;
-    margin-bottom: 0.5rem;
+  position: relative;
+  padding: 2rem 0 1rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .pizza-tracker-line-bg {
-    position: absolute;
-    top: 2.375rem;
-    /* center it horizontally with the dots */
-    left: 1.5rem;
-    /* offset padding so it connects centers of dots */
-    right: 1.5rem;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    z-index: 1;
+  position: absolute;
+  top: 2.375rem;
+  /* center it horizontally with the dots */
+  left: 1.5rem;
+  /* offset padding so it connects centers of dots */
+  right: 1.5rem;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  z-index: 1;
 }
 
 .pizza-tracker-line-fill {
-    height: 100%;
-    background: var(--color-green);
-    border-radius: 2px;
-    transition: width 1s linear;
+  height: 100%;
+  background: var(--color-green);
+  border-radius: 2px;
+  transition: width 1s linear;
 }
 
 .pizza-tracker-steps {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .tracker-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    width: 60px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 60px;
+  text-align: center;
 }
 
 .step-dot {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--bg-surface-elevated);
-    border: 3px solid var(--color-border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg-surface-elevated);
+  border: 3px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .tracker-step.completed .step-dot {
-    background: var(--color-green);
-    border-color: var(--color-green);
+  background: var(--color-green);
+  border-color: var(--color-green);
 }
 
 .tracker-step.active .step-dot {
-    border-color: var(--color-green);
-    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
-    background: var(--bg-surface-elevated);
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+  background: var(--bg-surface-elevated);
 }
 
 .dot-inner-check {
-    width: 6px;
-    height: 6px;
-    background: white;
-    border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
 }
 
 .step-label {
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    font-weight: 500;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 .tracker-step.completed .step-label {
-    color: var(--color-green);
+  color: var(--color-green);
 }
 
 .tracker-step.active .step-label {
-    color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .eta-label {
-    text-align: right;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-weight: 500;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
 }
