@@ -79,8 +79,8 @@
 }
 
 .log-text.warning {
-    color: #f59e0b;
-    /* amber */
+    color: var(--color-yellow);
+    /* warning */
 }
 
 .log-text.critical {
@@ -89,8 +89,8 @@
 }
 
 .log-text.info {
-    color: #3b82f6;
-    /* blue */
+    color: var(--color-indigo);
+    /* info */
 }
 
 /* Scrollbar styles for terminal */
@@ -103,6 +103,6 @@
 }
 
 .logs-container::-webkit-scrollbar-thumb {
-    background: rgba(16, 185, 129, 0.3);
+    background: rgba(34, 197, 94, 0.3);
     border-radius: 3px;
 }

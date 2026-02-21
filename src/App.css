@@ -20,10 +20,11 @@
 }
 
 .nav-brand {
+  font-family: var(--font-serif);
   font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--text-primary);
-  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  color: var(--color-red);
+  letter-spacing: 1px;
 }
 
 .nav-controls {
@@ -95,7 +96,7 @@
 
 .map-wrapper.large {
   flex: 1;
-  background: radial-gradient(circle at center, #1e2433 0%, #0c1017 100%);
+  background: radial-gradient(circle at center, var(--bg-surface-elevated) 0%, var(--bg-color) 100%);
   margin: 0 2rem;
   border-radius: 12px;
   border: 1px solid var(--color-border);
@@ -133,14 +134,14 @@
 .map-container {
   flex: 0 0 60%;
   position: relative;
-  background: radial-gradient(circle at center, #1e2433 0%, #0c1017 100%);
+  background: radial-gradient(circle at center, var(--bg-surface-elevated) 0%, var(--bg-color) 100%);
   border-bottom: 1px solid var(--color-border);
 }
 
 .terminal-container {
   flex: 0 0 40%;
   background: #050505;
-  color: #10b981;
+  color: var(--color-green);
   font-family: 'Courier New', Courier, monospace;
   padding: 1rem;
   overflow-y: auto;
@@ -165,13 +166,13 @@
 }
 
 .crisis-button.primary {
-  background: var(--color-indigo);
+  background: var(--color-red);
   color: white;
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4);
 }
 
 .crisis-button.primary:hover {
-  background: #4f46e5;
+  background: #b91c1c;
   transform: scale(1.05);
 }
 

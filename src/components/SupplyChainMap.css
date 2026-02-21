@@ -26,7 +26,7 @@
 .map-line.crisis {
     stroke: var(--color-red);
     stroke-width: 6;
-    filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.8));
+    filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.8));
 }
 
 @keyframes dash {
@@ -75,5 +75,5 @@
 .map-node.crisis .node-icon-wrapper {
     border-color: var(--color-red);
     color: var(--color-red);
-    box-shadow: 0 0 16px rgba(239, 68, 68, 0.4);
+    box-shadow: 0 0 16px rgba(220, 38, 38, 0.4);
 }

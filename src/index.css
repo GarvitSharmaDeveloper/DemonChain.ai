@@ -1,15 +1,18 @@
 :root {
-  --bg-color: #0c1017;
-  --bg-surface: #1a1f2c;
-  --bg-surface-elevated: #252c38;
+  --bg-color: #0a0a0f;
+  --bg-surface: #16161e;
+  --bg-surface-elevated: #20202c;
   --text-primary: #f3f4f6;
   --text-secondary: #9ca3af;
   --text-muted: #6b7280;
-  --color-green: #10b981;
-  --color-red: #ef4444;
-  --color-indigo: #6366f1;
+  --color-green: #22c55e; /* Tanjiro Green */
+  --color-red: #dc2626;   /* Demon Blood Red */
+  --color-indigo: #4f46e5; /* Nichirin/Water Breathing Blue */
+  --color-pink: #ec4899;  /* Nezuko Pink */
+  --color-yellow: #eab308; /* Zenitsu Yellow */
   --color-border: rgba(255, 255, 255, 0.1);
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: 'Noto Serif JP', serif;
   --transition-speed: 0.3s;
 }
 

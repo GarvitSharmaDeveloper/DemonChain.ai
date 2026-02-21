@@ -25,9 +25,8 @@
 }
 
 .all-good-badge {
-    background: rgba(16, 185, 129, 0.15);
-    color: #34d399;
-    /* Slightly brighter green for iOS feel */
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--color-green);
     border: none;
     padding: 0.35rem 0.85rem;
     border-radius: 999px;
@@ -183,7 +182,7 @@
 
 .tracker-step.active .step-dot {
     border-color: var(--color-green);
-    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
     background: var(--bg-surface-elevated);
 }
 

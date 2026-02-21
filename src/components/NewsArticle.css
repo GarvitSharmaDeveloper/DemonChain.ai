@@ -19,7 +19,7 @@
 }
 
 .newspaper-container .masthead {
-    font-family: 'Playfair Display', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+    font-family: var(--font-serif);
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: -1px;
