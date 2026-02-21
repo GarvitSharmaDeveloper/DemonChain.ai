@@ -1,0 +1,286 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-nav {
+  height: 60px;
+  background: var(--bg-surface-elevated);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.nav-status.alert {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+  animation: pulseRed 2s infinite;
+}
+
+.nav-status.ok {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+}
+
+.nav-btn {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.nav-btn:hover {
+  color: var(--text-primary);
+}
+
+.page-content {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-layout {
+  height: 100%;
+  width: 100%;
+}
+
+.full-map-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.page-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.page-header p {
+  color: var(--color-green);
+  font-size: 1.1rem;
+}
+
+.map-wrapper.large {
+  flex: 1;
+  background: radial-gradient(circle at center, #1e2433 0%, #0c1017 100%);
+  margin: 0 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.action-footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Split view layouts for IncidentView */
+.left-panel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--color-border);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.right-panel {
+  width: 50%;
+  height: 100%;
+  background: var(--bg-surface);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.map-container {
+  flex: 0 0 60%;
+  position: relative;
+  background: radial-gradient(circle at center, #1e2433 0%, #0c1017 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.terminal-container {
+  flex: 0 0 40%;
+  background: #050505;
+  color: #10b981;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  overflow-y: auto;
+  position: relative;
+}
+
+.dashboard-container {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+}
+
+.crisis-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.crisis-button.primary {
+  background: var(--color-indigo);
+  color: white;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+}
+
+.crisis-button.primary:hover {
+  background: #4f46e5;
+  transform: scale(1.05);
+}
+
+/* For overlaying the generate ticket button in IncidentView */
+.crisis-button.slide-down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  animation: slideDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.crisis-button.slide-down:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-content.slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.modal-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.styled-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+
+.styled-select:focus {
+  border-color: var(--color-indigo);
+}
